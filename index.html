@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OursureLearn — Math Tutoring</title>
+    <meta
+      name="description"
+      content="OursureLearn connects students with experienced tutors. Math tutoring with Sarat Sahoo — Algebra, Precalculus, Calculus AB & BC."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="#top" aria-label="OursureLearn home">
+          <img src="assets/logo.svg" alt="" width="36" height="36" />
+          <span>OursureLearn</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#tutors">Tutors</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="brand-mark">OursureLearn</p>
+          <h1 id="hero-heading">Clear math. Confident students.</h1>
+          <p class="lede">
+            One-to-one tutoring in Algebra, Precalculus, and Calculus AB &amp; BC — taught with patience and precision.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="mailto:oursurelearn@gmail.com"
+              >Email us to get started</a
+            >
+            <a class="btn ghost" href="#tutors">Meet the tutor</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="board">
+            <svg class="board-art" viewBox="0 0 420 320" role="img">
+              <defs>
+                <linearGradient id="chalk" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#d8f3dc" />
+                  <stop offset="100%" stop-color="#95d5b2" />
+                </linearGradient>
+              </defs>
+              <rect width="420" height="320" rx="4" fill="#14352f" />
+              <path
+                d="M48 210 C90 80, 150 80, 190 160 S280 260, 360 120"
+                fill="none"
+                stroke="url(#chalk)"
+                stroke-width="3.5"
+                stroke-linecap="round"
+              />
+              <text x="56" y="70" class="eq" fill="#b7e4c7">f(x) = ∫ g(t) dt</text>
+              <text x="56" y="108" class="eq small" fill="#95d5b2">
+                lim → ∞ · Δx → 0
+              </text>
+              <circle cx="190" cy="160" r="6" fill="#e9c46a" />
+              <circle cx="360" cy="120" r="6" fill="#e9c46a" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="tutors" class="tutors" aria-labelledby="tutors-heading">
+        <div class="section-head">
+          <h2 id="tutors-heading">Our tutors</h2>
+        </div>
+
+        <article class="tutor">
+          <div class="tutor-meta">
+            <p class="subject-tag">Mathematics</p>
+            <h3>Sarat Sahoo</h3>
+            <p class="experience">Multiple years teaching high school students in the USA</p>
+            <ul class="topics">
+              <li>Algebra</li>
+              <li>Precalculus</li>
+              <li>Calculus AB</li>
+              <li>Calculus BC</li>
+            </ul>
+          </div>
+          <div class="tutor-details">
+            <div class="detail-block">
+              <h4>About</h4>
+              <p>
+                Passionate mathematics educator dedicated to helping students excel in IIT-JEE and other competitive examinations. Believes in building strong fundamentals, logical thinking, and the confidence needed to solve even the most challenging problems.
+              </p>
+            </div>
+            <div class="detail-block">
+              <h4>Student feedback</h4>
+              <p>Coming soon.</p>
+            </div>
+            <a class="btn primary" href="mailto:oursurelearn@gmail.com"
+              >Contact about Math tutoring</a
+            >
+          </div>
+        </article>
+
+        <aside class="coming-soon" aria-labelledby="physics-heading">
+          <p class="subject-tag muted">Physics</p>
+          <h3 id="physics-heading">Physics tutor</h3>
+          <p>Coming soon — stay tuned.</p>
+        </aside>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get in touch</h2>
+        <p>
+          Reach us at <a href="mailto:oursurelearn@gmail.com">oursurelearn@gmail.com</a> for scheduling, questions, or to request a tutor.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> OursureLearn · oursurelearn.com</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
