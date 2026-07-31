@@ -198,7 +198,6 @@ a:hover {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
-  transform: rotate(-1.5deg);
 }
 
 .board-art {
@@ -439,10 +438,6 @@ a:hover {
   .btn {
     padding: 0.55rem 0.9rem;
     font-size: 0.92rem;
-  }
-
-  .board {
-    transform: none;
   }
 
   .hero-visual {
