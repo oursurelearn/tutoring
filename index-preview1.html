@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OursureLearn — Tutoring (Preview)</title>
+    <meta
+      name="description"
+      content="OursureLearn connects students with experienced tutors in Math, Statistics, and Physics."
+    />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Preview-only layout; does not change the live index.html styles */
+      .preview-banner {
+        max-width: 1000px;
+        margin: 0.75rem auto 0;
+        padding: 0.55rem 1.5rem;
+        color: var(--ink-soft);
+        font-size: 0.92rem;
+      }
+
+      .tutor-list {
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .tutor-row {
+        display: grid;
+        grid-template-columns: 1.1fr 1.4fr auto;
+        gap: 0.85rem 1rem;
+        align-items: start;
+        padding: 1.1rem 1.25rem;
+        background: rgba(255, 255, 255, 0.55);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+      }
+
+      .tutor-row h3 {
+        margin: 0 0 0.2rem;
+        font-family: var(--font-display);
+        font-size: 1.25rem;
+        letter-spacing: -0.02em;
+      }
+
+      .tutor-row .focus {
+        margin: 0;
+        color: var(--ink-soft);
+        font-size: 0.98rem;
+      }
+
+      .tutor-row .topics {
+        margin-top: 0.15rem;
+      }
+
+      .tutor-row .btn {
+        white-space: nowrap;
+        align-self: start;
+      }
+
+      .tutor-row .about {
+        grid-column: 1 / -1;
+        margin: 0;
+        padding-top: 0.35rem;
+        border-top: 1px solid var(--line);
+      }
+
+      .tutor-row .about h4 {
+        margin: 0 0 0.3rem;
+        font-family: var(--font-display);
+        font-size: 0.95rem;
+        letter-spacing: -0.01em;
+      }
+
+      .tutor-row .about p {
+        margin: 0;
+        color: var(--ink-soft);
+        font-size: 0.98rem;
+      }
+
+      .subject-group {
+        margin-bottom: 1.35rem;
+      }
+
+      .subject-group > h3 {
+        margin: 0 0 0.65rem;
+        font-family: var(--font-display);
+        font-size: 1.15rem;
+        letter-spacing: -0.02em;
+        color: var(--ink-soft);
+      }
+
+      .offer-note {
+        margin: 0.85rem 0 0;
+        max-width: 36rem;
+        color: var(--ink-soft);
+        font-size: 0.98rem;
+        line-height: 1.45;
+      }
+
+      .section-head .offer-note {
+        margin-top: 0.45rem;
+      }
+
+      @media (max-width: 860px) {
+        .tutor-row {
+          grid-template-columns: 1fr;
+          gap: 0.75rem;
+        }
+
+        .tutor-row .btn {
+          justify-self: start;
+        }
+
+        .preview-banner {
+          padding-inline: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="brand" href="#top" aria-label="OursureLearn home">
+          <img src="assets/logo.svg" alt="" width="36" height="36" />
+          <span>OursureLearn</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#tutors">Tutors</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <p class="preview-banner">
+      Preview page only — live site still uses <code>index.html</code>. Open
+      <code>index-preview.html</code> to review this layout.
+    </p>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="brand-mark">OursureLearn</p>
+          <h1 id="hero-heading">Clear learning. Confident students.</h1>
+          <p class="lede">
+            Online one-to-one tutoring in Math, Statistics, and Physics — matched to the right tutor for your goals.
+          </p>
+          <div class="cta-row">
+            <a
+              class="btn primary"
+              href="mailto:oursurelearn@gmail.com?subject=Free%2030-min%20tutor%20discussion&body=Hi%20OursureLearn%2C%0A%0AI%27d%20like%20to%20book%20a%20free%2030-minute%20discussion%20with%20a%20tutor.%0A%0AStudent%20name%3A%20%0AGrade%20%2F%20level%3A%20%0ASubject%20interest%3A%20%0APreferred%20times%3A%20%0A%0AThank%20you%21"
+              >Email us to get started</a
+            >
+            <a class="btn ghost" href="#tutors">Meet the tutors</a>
+          </div>
+          <p class="offer-note">
+            All sessions are online. Start with a free 30-minute discussion directly with the tutor before you decide.
+          </p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="board">
+            <svg class="board-art" viewBox="0 0 420 320" role="img">
+              <defs>
+                <linearGradient id="chalk" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#d8f3dc" />
+                  <stop offset="100%" stop-color="#95d5b2" />
+                </linearGradient>
+              </defs>
+              <rect width="420" height="320" rx="4" fill="#14352f" />
+              <path
+                d="M48 210 C90 80, 150 80, 190 160 S280 260, 360 120"
+                fill="none"
+                stroke="url(#chalk)"
+                stroke-width="3.5"
+                stroke-linecap="round"
+              />
+              <text x="56" y="70" class="eq" fill="#b7e4c7">f(x) = ∫ g(t) dt</text>
+              <text x="56" y="108" class="eq small" fill="#95d5b2">
+                lim → ∞ · Δx → 0
+              </text>
+              <circle cx="190" cy="160" r="6" fill="#e9c46a" />
+              <circle cx="360" cy="120" r="6" fill="#e9c46a" />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="tutors" class="tutors" aria-labelledby="tutors-heading">
+        <div class="section-head">
+          <h2 id="tutors-heading">Our tutors</h2>
+          <p class="offer-note">
+            Online only · Free 30-minute discussion with your tutor before you enroll
+          </p>
+        </div>
+
+        <div class="subject-group">
+          <h3>Mathematics</h3>
+          <div class="tutor-list">
+            <article class="tutor-row">
+              <div>
+                <p class="subject-tag">Math</p>
+                <h3>Mr. Sarat</h3>
+                <p class="focus">Algebra · Precalculus · Calculus AB &amp; BC</p>
+              </div>
+              <div>
+                <ul class="topics">
+                  <li>Algebra</li>
+                  <li>Precalculus</li>
+                  <li>Calculus AB</li>
+                  <li>Calculus BC</li>
+                </ul>
+              </div>
+              <a
+                class="btn primary"
+                href="mailto:oursurelearn@gmail.com?subject=Math%20tutoring%20inquiry%20%E2%80%94%20Mr.%20Sarat&body=Hi%20OursureLearn%2C%0A%0AI%27m%20interested%20in%20Math%20tutoring%20with%20Mr.%20Sarat.%0A%0AStudent%20name%3A%20%0AGrade%20%2F%20level%3A%20%0ATopics%3A%20%0A%0AThank%20you%21"
+                >Contact</a
+              >
+              <div class="about">
+                <h4>About</h4>
+                <p>
+                  Passionate mathematics educator dedicated to helping students excel in IIT-JEE and other competitive examinations. Believes in building strong fundamentals, logical thinking, and the confidence needed to solve even the most challenging problems.
+                </p>
+              </div>
+            </article>
+
+            <article class="tutor-row">
+              <div>
+                <p class="subject-tag">Math · Statistics</p>
+                <h3>Mr. R. Sahu</h3>
+                <p class="focus">Statistics and related math support</p>
+              </div>
+              <div>
+                <ul class="topics">
+                  <li>Statistics</li>
+                  <li>Data analysis basics</li>
+                </ul>
+              </div>
+              <a
+                class="btn primary"
+                href="mailto:oursurelearn@gmail.com?subject=Statistics%20tutoring%20inquiry%20%E2%80%94%20Mr.%20R.%20Sahu&body=Hi%20OursureLearn%2C%0A%0AI%27m%20interested%20in%20Statistics%20tutoring%20with%20Mr.%20R.%20Sahu.%0A%0AStudent%20name%3A%20%0AGrade%20%2F%20level%3A%20%0ATopics%3A%20%0A%0AThank%20you%21"
+                >Contact</a
+              >
+              <div class="about">
+                <h4>About</h4>
+                <p>
+                  Holds a Master’s in Mathematics from IIT, with more than 6 years of teaching experience.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="subject-group">
+          <h3>Physics</h3>
+          <div class="tutor-list">
+            <article class="tutor-row">
+              <div>
+                <p class="subject-tag">Physics</p>
+                <h3>Ms. Das</h3>
+                <p class="focus">AP Physics 1 · AP Physics 2 and related high school Physics</p>
+              </div>
+              <div>
+                <ul class="topics">
+                  <li>AP Physics 1</li>
+                  <li>AP Physics 2</li>
+                  <li>High school Physics</li>
+                </ul>
+              </div>
+              <a
+                class="btn primary"
+                href="mailto:oursurelearn@gmail.com?subject=Physics%20tutoring%20inquiry%20%E2%80%94%20Ms.%20Das&body=Hi%20OursureLearn%2C%0A%0AI%27m%20interested%20in%20Physics%20tutoring%20with%20Ms.%20Das.%0A%0AStudent%20name%3A%20%0AGrade%20%2F%20level%3A%20%0ATopics%3A%20%0A%0AThank%20you%21"
+                >Contact</a
+              >
+              <div class="about">
+                <h4>About</h4>
+                <p>
+                  Holds a Ph.D. in Physics from IIT and currently serves as a professor at a reputed university in India, with teaching as her full-time profession.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get in touch</h2>
+        <p>
+          Reach us at
+          <a href="mailto:oursurelearn@gmail.com?subject=Free%2030-min%20tutor%20discussion"
+            >oursurelearn@gmail.com</a
+          >
+          to schedule a free 30-minute online discussion with a tutor, or ask any questions.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> OursureLearn · oursurelearn.com · preview</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
