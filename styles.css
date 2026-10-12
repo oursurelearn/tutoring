@@ -327,6 +327,82 @@ a:hover {
   color: var(--ink-soft);
 }
 
+.tutor-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.tutor-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr auto;
+  gap: 0.85rem 1rem;
+  align-items: start;
+  padding: 1.1rem 1.25rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.tutor-row h3 {
+  margin: 0 0 0.2rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.tutor-row .topics {
+  margin-top: 0.15rem;
+}
+
+.tutor-row .btn {
+  white-space: nowrap;
+  align-self: start;
+}
+
+.tutor-row .about {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--line);
+}
+
+.tutor-row .about h4 {
+  margin: 0 0 0.3rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+}
+
+.tutor-row .about p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+.subject-group {
+  margin-bottom: 1.35rem;
+}
+
+.subject-group > h3 {
+  margin: 0 0 0.65rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  color: var(--ink-soft);
+}
+
+.offer-note {
+  margin: 0.85rem 0 0;
+  max-width: 36rem;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.section-head .offer-note {
+  margin-top: 0.45rem;
+}
+
 .contact {
   border-top: 1px solid var(--line);
   padding-top: 1rem;
@@ -453,6 +529,15 @@ a:hover {
   .tutors,
   .contact {
     padding: 1rem;
+  }
+
+  .tutor-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .tutor-row .btn {
+    justify-self: start;
   }
 
   .contact p {
